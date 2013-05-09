@@ -159,10 +159,10 @@ endfunction
 " FUNCTION: nerdtree#exec(cmd) {{{2
 " same as :exec cmd  but eventignore=all is set for the duration
 function! nerdtree#exec(cmd)
-    let old_ei = &ei
-    set ei=all
+"    let old_ei = &ei
+"    set ei=all
     exec a:cmd
-    let &ei = old_ei
+"    let &ei = old_ei
 endfunction
 
 " FUNCTION: nerdtree#findAndRevealPath() {{{2
